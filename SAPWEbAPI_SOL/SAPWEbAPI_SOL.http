@@ -1,0 +1,6 @@
+@SAPWEbAPI_SOL_HostAddress = http://localhost:5165
+
+GET {{SAPWEbAPI_SOL_HostAddress}}/Home/Index
+Accept: application/json
+
+###

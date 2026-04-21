@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace SAPWEbAPI_SOL.Controller;
 
 
@@ -23,6 +25,15 @@ public class HomeController:ControllerBase
     public IActionResult make()
     {
         return Ok("Hello World!1");
+    }
+
+    [HttpGet("getall",Name =  "GetAll")]
+    public IActionResult GetAll()
+    {
+        String json = System.IO.File.ReadAllText("./Data/Auth.json");
+        
+        return Ok(json);
+        
     }
     
     
