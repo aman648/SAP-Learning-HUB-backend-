@@ -27,14 +27,14 @@ public class HomeController:ControllerBase
         return Ok("Hello World!1");
     }
 
-    [HttpGet("getall",Name =  "GetAll")]
-    public IActionResult GetAll()
-    {
-        String json = System.IO.File.ReadAllText("./Data/Auth.json");
-        
-        return Ok(json);
-        
-    }
+    // [HttpGet("getall",Name =  "GetAll")]
+    // public IActionResult GetAll()
+    // {
+    //     String json = System.IO.File.ReadAllText("./Data/Auth.json");
+    //     
+    //     return Ok(json);
+    //     
+    // }
     
     
 }
